@@ -1,0 +1,107 @@
+.form {
+  display: flex;
+    flex-direction: column;  
+    gap: 15px;
+  }
+
+  .get {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(213, 213, 223, 0.5);
+
+  }
+
+  .form-field {
+    width: 100%;
+  }
+.form-label {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+  .input-wrapper {
+    display: flex;
+    flex-direction: row; 
+align-items: stretch;  
+gap: 15px;
+
+}
+
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: var(--clr-accent);
+    }
+  }
+
+  
+textarea {
+  width: 100%;    
+  resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    height: 120px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: var(--clr-accent);
+    }
+  }
+
+  .message::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  
+.form .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 52px;
+    padding-left: 52px;
+  }
+
+  button:active {
+    transform: translateY(1px);
+  }
+  
+    .button {
+      padding-left: 24px;
+      padding-right: 24px;
+      border-radius: 4px;
+      background-color: var(--clr-text-dark);
+      color: var(--clr-bg-normal);
+    
+      font-weight: 700;
+      line-height: 1.88;
+      letter-spacing: 0.06em;
+    
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+      &:hover,
+      &:focus {
+        background-color: var(--clr-accent);
+      }
+    
+      @media screen and (min-width: 1600px) {
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+    }
+    

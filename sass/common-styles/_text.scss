@@ -1,0 +1,13 @@
+p {
+    line-height: 1.7;
+    font-size: 12px;
+
+    @include scr(tablet) {
+        font-size: 14px;
+    }
+
+    @include scr(desktop) {
+        font-size: 1.5em;
+    }
+
+}

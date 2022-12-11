@@ -1,0 +1,28 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--second-font);
+    color: var(--clr-text-dark);
+    letter-spacing: 0.06em;
+  
+}
+
+h2 {
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+    @include scr(tablet) {
+        margin-bottom: 20px;
+    }
+    @include scr(desktop) {
+        margin-bottom: 30px;
+    }
+}

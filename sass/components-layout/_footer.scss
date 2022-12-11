@@ -1,0 +1,58 @@
+.footer {
+    min-height: 100vh;
+    padding-top: 30px;
+  }
+.connect {
+    padding-top: 30px;
+    margin-bottom: 15px;
+}
+
+  .socials-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+  }
+
+  .socials-list a:hover,
+.socials-list a:focus {
+    background-color: var(--clr-text-dark);
+    color: var(--clr-bg-normal);
+  }
+
+  .socials-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icons-color);
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .connect .connect-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--clr-text-normal);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+.company-text {
+    text-align: center;
+    color: var(--clr-text-dark);
+    font-size: 14px;
+    line-height: 1.17;
+    font-weight: 700;
+  }
+
+.company-text svg {
+    margin-right: 10px;
+    margin-bottom: -3px;
+    fill: var(--clr-text-normal);
+}

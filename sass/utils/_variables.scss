@@ -1,0 +1,21 @@
+:root {
+//accent colors
+--clr-accent:#143ad4; // accent color, is used for section headings and hover, focus effects
+
+//background colors
+--clr-bg-normal: #ffffff; // most common background color
+--bgr-hero-color: #c4c4c4;
+--gradient: linear-gradient(to top,
+rgba(213, 213, 223, 0.5),
+rgba(232, 240, 243, 0.7)
+);
+
+//text
+--main-font: 'HelveticaRegular', sans-serif;
+--second-font: 'HelveticaBold', sans-serif;
+--clr-text-normal: #606060; // most common text color
+--clr-text-dark: #0844a4;; // color to darken a text
+--clr-text-darkest: #212121; // color to darken a text
+--clr-text-light: #7A7A7A; // color to light a text
+}
+

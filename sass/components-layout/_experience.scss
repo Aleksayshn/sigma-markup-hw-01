@@ -1,0 +1,152 @@
+
+  .experience {
+    min-height: 100vh;
+    padding-top: 30px;
+    border-bottom: 1px solid rgba(213, 213, 223, 0.5);
+  }
+
+.experience__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  @include scr(tablet) {
+    @include grid;
+    flex-direction: row;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+}
+
+.experience__describe {
+  position: relative;
+
+}
+
+.experience__text::after {
+  @include scr(tablet) {
+position: absolute;
+  content: "";
+  width: 40%;
+  height: 2px;
+  border-radius: 2px;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(145, 145, 149, 0.5);
+  }
+}
+  
+
+
+
+.experience__item {
+  position: relative;
+  border: 1px solid var(--clr-text-normal);
+  padding: 5px;
+  text-align: center;
+
+  @include scr(tablet) {
+    @include grid-item(3);
+  }
+}
+
+
+.donut {
+  order: 1;
+  background: conic-gradient(#ea1a1a 0deg 59deg,
+      black 59deg 61deg,
+      green 61deg 188deg,
+      black 188deg 190deg,
+      blue 190deg 360deg);
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--clr-text-darkest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%) rotate(25deg);
+  animation: loading 1.5s ease-in-out infinite;
+
+  @include scr(tablet) {
+    order: 0;
+
+  }
+
+  @include scr(desktop) {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(25deg);
+  }
+
+  100% {
+    transform: rotate(385deg);
+  }
+}
+
+
+.hole {
+  background: var(--clr-bg-normal);
+  border-radius: 50%;
+  border: 2px solid var(--clr-text-darkest);
+  width: 80px;
+  height: 80px;
+
+  @include scr(tablet) {
+    width: 80px;
+    height: 80px;
+  }
+
+  @include scr(desktop) {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+
+.tech-skills {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+
+
+.tech-skill-1,
+.tech-skill-2,
+.tech-skill-3,
+.tech-skill-4 {
+  color: var(--clr-text-darkest);
+  border: 2px solid var(--clr-text-darkest);
+  border-radius: 25px;
+  min-width: 60px;
+  padding: 5px;
+  text-align: center;
+}
+
+.tech-skill-1 {
+  background-color: #039b1c;
+
+}
+
+.tech-skill-2 {
+  background-color: #0d49d3;
+}
+
+.tech-skill-3 {
+  background-color: #ea1a1a;
+}
+
+.tech-skill-4 {
+  background-color: #eaca2a;
+}
